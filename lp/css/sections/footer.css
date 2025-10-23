@@ -1,0 +1,116 @@
+/* フッター */
+.site-footer {
+  background-color: #fff;
+  padding: 100px 0 100px;
+}
+
+.footer-content {
+  display: flex;
+  gap: 225px;
+  align-items: flex-start;
+}
+
+.footer-brand {
+  flex-shrink: 0;
+}
+
+.footer-logo {
+  font-family: 'Hiragino Sans', sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  color: #2c2c2c;
+  margin: 0;
+}
+
+.footer-nav {
+  flex: 1;
+  display: flex;
+  gap: 30px;
+}
+
+.footer-nav-column {
+  flex: 1;
+}
+
+.footer-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav-list li {
+  margin-bottom: 20px;
+}
+
+.footer-nav-list li:last-child {
+  margin-bottom: 0;
+}
+
+.footer-nav-list a {
+  font-family: 'Hiragino Sans', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: #9c9c9c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-nav-list a:hover {
+  color: #2c2c2c;
+}
+
+.footer-copyright {
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.footer-copyright p {
+  font-family: 'Hiragino Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #9c9c9c;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-copyright {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 60px 0 40px;
+  }
+
+  .footer-content {
+    gap: 30px;
+  }
+
+  .footer-logo {
+    font-size: 24px;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-nav-list li {
+    margin-bottom: 16px;
+  }
+
+  .footer-nav-list a {
+    font-size: 16px;
+  }
+
+  .footer-copyright p {
+    font-size: 14px;
+  }
+}

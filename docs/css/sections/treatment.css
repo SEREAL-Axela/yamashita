@@ -1,0 +1,69 @@
+/* 課題の解決策セクション */
+.treatment-section {
+  width: 1440px;
+  height: 1018px;
+  background-color: #202020;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+.treatment-section .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.treatment-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* タイトル「課題の解決策」 */
+.treatment-section .section-title {
+  width: 1440px;
+  color: #fff;
+  padding: 50px 50px 72px;
+  text-align: left;
+  margin: 0;
+}
+
+.treatment-content {
+  width: 1028px;
+  z-index: 2;
+}
+
+.treatment-description {
+  font-family: noto-sans-jp, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.3;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin: 0;
+}
+
+/* 背景画像 */
+.treatment-bg-image-mask {
+  width: 100%;
+  height: 463px;
+}
+
+.treatment-bg-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 463px;
+  z-index: 999;
+}
+
+.treatment-bg-image img {
+  width: 1440px;
+  height: 509px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}

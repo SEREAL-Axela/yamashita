@@ -1,0 +1,88 @@
+/* 主な特徴や機能セクション */
+.features-section {
+  width: 1440px;
+  height: 1018px;
+  background-color: #fff;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.features-section .container {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* タイトル「主な特徴や機能」 */
+.features-section .section-title {
+  width: 1440px;
+  color: #2c2c2c;
+  text-align: left;
+  margin: 0;
+  padding: 50px 50px 80px;
+}
+
+/* グリッドレイアウト */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  gap: 20px;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* カード */
+.feature-card {
+  width: 400px;
+  height: 749px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+/* 画像 */
+.feature-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.feature-image img {
+  width: 398px;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+/* タイトル */
+.feature-title {
+  font-family: noto-sans-jp, sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  color: #2c2c2c;
+  width: 100%;
+  margin: 50px 0;
+  text-align: center;
+}
+
+/* 説明文 */
+.feature-description {
+  font-family: noto-sans-jp, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+  color: #8c8c8c;
+  margin: 0;
+  padding: 0 40px 30px;
+  width: 100%;
+}

@@ -1,0 +1,66 @@
+/* サービス概要セクション */
+.about-section {
+  width: 1440px;
+  height: 1018px;
+  background-color: #efefef;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.about-section .container {
+  width: 1440px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* タイトル「サービス概要」 */
+.about-section .section-title {
+  width: 1440px;
+  padding: 50px 50px 62px;
+  margin: 0;
+  text-align: left;
+}
+
+.about-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* メインタイトル */
+.about-main-title {
+  font-family: noto-sans-jp, sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  color: #2c2c2c;
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+/* 説明文 */
+.about-description {
+  width: 816px;
+  font-family: noto-sans-jp, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #8c8c8c;
+  text-align: left;
+  margin: 0 0 36px;
+}
+
+/* 画像 */
+.about-image {
+  width: 1028px;
+  height: 618px;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

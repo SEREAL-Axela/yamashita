@@ -1,0 +1,111 @@
+/* 選ばれる理由セクション */
+.advantage-section {
+  width: 1440px;
+  height: 1018px;
+  background-color: #202020;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.advantage-section .container {
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* タイトル「選ばれる理由」 */
+.advantage-section .section-title {
+  width: 1440px;
+  margin: 0;
+  padding: 50px;
+  text-align: left;
+}
+
+/* 説明文 */
+.advantage-description {
+  font-family: noto-sans-jp, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.3;
+  letter-spacing: 0.05em;
+  color: #fff;
+  text-align: left;
+  max-width: 1028px;
+  margin: 0 auto 57px;
+}
+
+/* グリッド */
+.advantage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  gap: 20px;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* カード */
+.advantage-card {
+  width: 400px;
+  height: 516px;
+  background-color: #272727;
+  border-radius: 12px;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* 画像 */
+.advantage-card-image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.advantage-card-image {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 51px;
+  background-color: #3a3a3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advantage-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* コンテンツ */
+.advantage-card-content {
+  text-align: left;
+}
+
+.advantage-card-title {
+  font-family: noto-sans-jp, sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin: 0 0 34px;
+}
+
+.advantage-card-desc {
+  font-family: noto-sans-jp, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  color: #9c9c9c;
+  margin: 0;
+}

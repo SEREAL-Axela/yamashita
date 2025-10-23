@@ -1,0 +1,138 @@
+/* 課題の解決策セクション */
+.treatment-section {
+  background-color: #202020;
+  padding: 0;
+  height: 900px;
+  display: flex;
+  overflow: hidden;
+}
+
+.treatment-section .container {
+  width: 1440px;
+  padding: 100px 0 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.treatment-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* タイトル「課題の解決策」 */
+.treatment-section .section-title {
+  width: 610px;
+  color: #fff;
+  margin: 0 0 30px;
+}
+
+.treatment-content {
+  width: 1028px;
+  z-index: 2;
+  margin-bottom: 0;
+}
+
+.treatment-description {
+  font-family: 'Hiragino Sans', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.3;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin: 0;
+}
+
+/* 背景画像 */
+.treatment-bg-image-mask {
+  width: 100%;
+  height: 463px;
+}
+
+.treatment-bg-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 463px;
+  z-index: 999;
+}
+
+.treatment-bg-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 1440px) {
+  .treatment-section {
+    height: auto;
+    min-height: 600px;
+  }
+
+  .treatment-section .container {
+    width: 100%;
+    padding: 80px 30px;
+  }
+
+  .treatment-section .section-title {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .treatment-content {
+    width: 100%;
+    max-width: 1028px;
+    margin-bottom: 50px;
+  }
+
+  .treatment-description {
+    font-size: 28px;
+  }
+
+  .treatment-bg-image-mask {
+    display: none;
+  }
+
+  .treatment-bg-image {
+    position: relative;
+    bottom: auto;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .treatment-section {
+    min-height: 300px;
+  }
+
+  .treatment-section .container {
+    padding: 60px 20px;
+  }
+
+  .treatment-section .section-title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .treatment-content {
+    margin-bottom: 40px;
+  }
+
+  .treatment-description {
+    font-size: 20px;
+  }
+
+  .treatment-bg-image-mask {
+    display: none;
+  }
+
+  .treatment-bg-image {
+    height: 250px;
+  }
+}

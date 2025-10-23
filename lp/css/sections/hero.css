@@ -1,0 +1,107 @@
+/* ヒーローセクション */
+.hero-section {
+  background-color: #fff;
+  padding: 0;
+  min-height: 900px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-section .container {
+  width: 1440px;
+  padding: 140px 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  margin-bottom: 71px;
+}
+
+.hero-title {
+  font-family: 'Hiragino Sans', sans-serif;
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 1.257; /* 88px / 70px */
+  letter-spacing: 0.02em;
+  color: #2c2c2c;
+  margin: 0 0 21px;
+}
+
+.hero-subtitle {
+  font-family: 'Hiragino Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  color: #2c2c2c;
+  margin: 0;
+}
+
+.hero-visual {
+  width: 1028px;
+  height: 500px;
+}
+
+.hero-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 1440px) {
+  .hero-section {
+    justify-content: flex-start;
+    min-height: auto;
+  }
+
+  .hero-section .container {
+    width: 100%;
+    padding: 100px 30px 80px;
+  }
+
+  .hero-content {
+    padding: 0 20px;
+    margin-bottom: 60px;
+  }
+
+  .hero-visual {
+    width: calc(100% - 60px);
+    max-width: 1028px;
+    height: auto;
+    aspect-ratio: 1028 / 500;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 0;
+  }
+
+  .hero-section .container {
+    padding: 60px 20px 80px;
+  }
+
+  .hero-content {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+    line-height: 1.3;
+    margin-bottom: 16px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .hero-visual {
+    width: 100%;
+  }
+}

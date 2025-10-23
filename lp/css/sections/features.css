@@ -1,0 +1,185 @@
+/* 主な特徴や機能セクション */
+.features-section {
+  background-color: #fff;
+  padding: 0;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.features-section .container {
+  width: 1440px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* タイトル「主な特徴や機能」 */
+.features-section .section-title {
+  width: 610px;
+  font-family: 'Hiragino Sans', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  color: #2c2c2c;
+  text-align: center;
+  margin: 40px auto 30px;
+}
+
+/* グリッドレイアウト */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  gap: 20px;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* カード */
+.feature-card {
+  width: 400px;
+  height: 649px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+/* 画像 */
+.feature-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.feature-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* タイトル */
+.feature-title {
+  font-family: 'Hiragino Sans', sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  color: #2c2c2c;
+  width: 100%;
+  margin: 50px 0;
+  text-align: center;
+}
+
+/* 説明文 */
+.feature-description {
+  font-family: 'Hiragino Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+  color: #8c8c8c;
+  margin: 0;
+  padding: 0 40px 30px;
+  width: 100%;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 1440px) {
+  .features-section {
+    height: auto;
+    padding: 80px 0;
+    overflow: visible;
+  }
+
+  .features-section .container {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .features-section .section-title {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 100%;
+  }
+
+  .feature-card {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .feature-card h3,
+  .feature-card p {
+    padding: 0 20px;
+  }
+
+  .feature-card h3 {
+    padding-top: 25px;
+  }
+
+  .feature-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 398 / 300;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-section {
+    padding: 60px 0;
+  }
+
+  .features-section .container {
+    padding: 0 20px;
+  }
+
+  .features-section .section-title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .feature-card {
+    padding: 0;
+  }
+
+  .feature-card h3,
+  .feature-card p {
+    padding: 0 20px;
+  }
+
+  .feature-card h3 {
+    padding-top: 20px;
+  }
+
+  .feature-image {
+    margin-bottom: 0;
+  }
+
+  .feature-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .feature-description {
+    font-size: 14px;
+  }
+}
