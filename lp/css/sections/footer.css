@@ -6,12 +6,14 @@
 
 .footer-content {
   display: flex;
-  gap: 225px;
+  gap: 40px;
   align-items: flex-start;
+  justify-content: space-between;
 }
 
 .footer-brand {
   flex-shrink: 0;
+  width: 240px;
 }
 
 .footer-logo {
@@ -23,7 +25,7 @@
 }
 
 .footer-nav {
-  flex: 1;
+  width: 390px;
   display: flex;
   gap: 30px;
 }
@@ -61,7 +63,6 @@
 
 .footer-copyright {
   flex-shrink: 0;
-  margin-left: auto;
 }
 
 .footer-copyright p {
